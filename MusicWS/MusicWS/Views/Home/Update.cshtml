@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+<p>@ViewBag.fc</p>
+<div class="row">
+    <div class="col-md-5">
+        <form action="~/Home/Update" method="post">
+            <fieldset name="update artist">
+                <label for="Firstname">old First name: </label><br />
+                <input type="text" id="firstname" name="firstname" value="" /><br />
+                <label for="Lastname">old Last name:</label><br />
+                <input type="text" id="lastname" name="lastname" value="" /><br />
+                <label for="NewFirstname">New first name: </label><br />
+                <input type="text" id="newfirstname" name="newfirstname" value="" /><br />
+                <label for="NewLastname">New last name:</label><br />
+                <input type="text" id="newlastname" name="newlastname" value="" /><br />
+                <input type="submit" id="updateArtist" value="update Artist" name="btn" title="updateArtist" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="col-md-5">
+        <form action="~/Home/Update" method="post">
+            <fieldset name="update album">
+                <label for="albumname">Album Name: </label><br />
+                <input type="text" id="albumname" name="albumname" value="" /><br />
+                <label for="year">Year of release:</label><br />
+                <input type="text" id="year" name="year" value="" /><br />
+                <input type="submit" id="updatealbum" value="update album" name="btn" title="updatealbum" />
+
+            </fieldset>
+        </form>
+    </div>
+</div>

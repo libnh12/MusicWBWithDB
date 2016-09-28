@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<div class="row">
+    <div class="col-md-3">
+        <form action="~/Home/Delete" method="post">
+            <fieldset name="delete artist">
+                <label for="Firstname">First name: </label><br />
+                <input type="text" id="firstname" name="firstname" value="" /><br />
+                <label for="Lastname">Last name:</label><br />
+                <input type="text" id="lastname" name="lastname" value="" /><br />
+                <input type="submit" id="deleteArtist" value="delete Artist" name="btn" title="deleteArtist" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="col-md-3">
+        <form action="~/Home/Delete" method="post">
+            <fieldset name="delete album">
+                <label for="albumname">Album Name: </label><br />
+                <input type="text" id="albumname" name="albumname" value="" /><br />
+                <label for="year">Year of release:</label><br />
+                <input type="text" id="year" name="year" value="" /><br />
+                <input type="submit" id="deletealbum" value="delete album" name="btn" title="deletealbum" />
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="col-md-3">
+        <form action="~/Home/Delete" method="post">
+            <fieldset name="delete genre">
+                <label for="genre">genre: </label><br />
+                <input type="text" id="genre" name="genre" value="" /><br />
+                <input type="submit" id="deletegenre" value="delete genre" name="btn" title="deletegenre" />
+                <p>@ViewBag.fc</p>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form action="~/Home/Delete" method="post">
+            <fieldset name="delete connection">
+                <label for="artist">Artist:</label><br />
+                <input type="text" id="artist" name="artist" value="" /><br />
+                <label for="albumname">Album Name: </label><br />
+                <input type="text" id="albumname" name="albumname" value="" /><br />
+                <label for="genre">genre: </label><br />
+                <input type="text" id="genre" name="genre" value="" /><br />
+                <input type="submit" id="deleteconection" value="delete connection" name="btn" title="deleteconnection" />
+            </fieldset>
+        </form>
+    </div>
+</div>

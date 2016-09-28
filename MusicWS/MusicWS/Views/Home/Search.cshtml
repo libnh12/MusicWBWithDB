@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+<div>
+    <form action="~/Home/Search" method="post">
+        <fieldset name="Search">
+            <label for="Search">Search for: </label><br />
+            <input type="text" id="search" name="search" value="" /><br />
+            <label for="genre">Choose genre(optional)</label><br />
+            <select>
+                <option value="1">All</option>
+                <option value="2">Rock</option>
+            </select><br /><br />
+            <input type="submit" id="Search" value="search" name="btn" title="Search" />
+        </fieldset>
+    </form>
+</div>    
+<p>@ViewBag.ds</p>

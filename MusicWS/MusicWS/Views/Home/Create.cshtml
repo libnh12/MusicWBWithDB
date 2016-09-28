@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<div class="row">
+    <div class="col-md-3">
+        <form action="~/Home/Create" method="post">
+            <fieldset name="Add artist">
+                <label for="Firstname">First name: </label><br />
+                <input type="text" id="firstname" name="firstname" value="" /><br />
+                <label for="Lastname">Last name:</label><br />
+                <input type="text" id="lastname" name="lastname" value="" /><br />
+                <input type="submit" id="AddArtist" value="Add Artist" name="btn" title="AddArtist" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="col-md-3">
+        <form action="~/Home/Create" method="post">
+            <fieldset name="Add album">
+                <label for="albumname">Album Name: </label><br />
+                <input type="text" id="albumname" name="albumname" value="" /><br />
+                <label for="year">Year of release:</label><br />
+                <input type="text" id="year" name="year" value="" /><br />
+                <input type="submit" id="Addalbum" value="add album" name="btn" title="addalbum" />
+                
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="col-md-3">
+        <form action="~/Home/Create" method="post">
+            <fieldset name="Add genre">
+                <label for="genre">genre: </label><br />
+                <input type="text" id="genre" name="genre" value="" /><br />
+                <input type="submit" id="Addgenre" value="add genre" name="btn" title="addgenre" />
+                <p>@ViewBag.fc</p>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form action="~/Home/Create" method="post">
+            <fieldset name="Add connection">
+                <label for="artist">Artist:</label><br />
+                <input type="text" id="artist" name="artist" value="" /><br />
+                <label for="albumname">Album Name: </label><br />
+                <input type="text" id="albumname" name="albumname" value="" /><br />
+                <label for="genre">genre: </label><br />
+                <input type="text" id="genre" name="genre" value="" /><br />
+                <input type="submit" id="Addconection" value="add connection" name="btn" title="addconnection" />
+            </fieldset>
+        </form>
+    </div>
+</div>
